@@ -1,0 +1,60 @@
+const fortunes = [
+    "You will achieve great things soon",
+    "Happiness is on the way",
+    "A new adventure is coming your way",
+    "You will find love in an unexpected place",
+    "Success is just around the corner",
+    "Your hard work will soon pay off",
+    "Expect a pleasant surprise",
+    "A financial opportunity will come your way",
+    "You will make a new and lasting friendship",
+    "A new chapter of your life is about to begin",
+    "Something you’ve been waiting for is about to happen",
+    "You will discover something new about yourself",
+    "You are about to experience a period of great creativity",
+    "Your determination will lead to great success",
+    "You will soon make an important decision",
+    "Trust your instincts, they will guide you",
+    "You are destined for greatness",
+    "A long-held dream is about to come true",
+    "Prepare for an exciting challenge",
+    "A mystery in your life will soon be solved",
+    "You will soon meet someone who changes your life",
+    "Be patient, good things are on the way",
+    "Your energy will inspire those around you",
+    "You will make an impact on someone’s life",
+    "A moment of reflection will lead to clarity",
+    "You will find peace in unexpected places",
+    "A new opportunity will test your abilities",
+    "Your positive attitude will bring good things",
+    "You are more capable than you know",
+    "A major life change is in your future",
+    "You will overcome obstacles with ease",
+    "A wise decision will lead you to success",
+    "Your kindness will be repaid in unexpected ways",
+    "You will soon be rewarded for your efforts",
+    "You will meet a mentor who helps you grow",
+    "A breakthrough is coming in your life",
+    "Good news will arrive soon",
+    "You are about to reach an important milestone",
+    "You will discover a new passion",
+    "A significant relationship will bloom soon",
+    "You will find the strength to face your fears",
+    "A surprise gift is in your future",
+    "Your generosity will come back to you",
+    "You will soon have the opportunity to travel",
+    "Your patience will be rewarded",
+    "A positive change is coming your way",
+    "You will soon be presented with a new challenge",
+    "Someone close to you will offer unexpected help",
+    "Your creativity will lead to new opportunities",
+    "An exciting opportunity is just ahead"
+];
+
+const fortunesButton = document.getElementById('fortuneButton');
+const fortuneDisplay = document.getElementById('fortuneDisplay');
+
+fortunesButton.addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * fortunes.length); // Fix: use fortunes.length, not fortunesButton.length
+    fortuneDisplay.textContent = fortunes[randomIndex]; // Fix: 'textcontent' to 'textContent'
+});
